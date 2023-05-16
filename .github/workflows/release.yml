@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 16.x
       - name: Install pnpm
-        run: npm i -g pnpm
+        run: pnpm install --no-frozen-lockfile
       # 缓存 node_modules
       - name: Cache dependencies
         uses: actions/cache@v3
